@@ -57,7 +57,7 @@ class MyOperator(bpy.types.Operator):
 | Color | `"(0.0, 0.3, 1.0, 1.0)"` | Cor em formato RGBA (Tom azul).|
 | Strength | `500.0` | Intensidade do brilho emitido pelo material.|
 
-## RequisitosBlender: 
+## Requisitos Blender: 
 - Versão 2.80 ou superior.
 ## Engine de Render recomendada: 
 - EEVEE ou Cycles para visualizar o efeito de emissão de luz.

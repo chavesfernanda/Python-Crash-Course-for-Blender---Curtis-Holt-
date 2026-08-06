@@ -42,3 +42,22 @@ class MyOperator(bpy.types.Operator):
     bl_idname = "object.my_operator"
     bl_label = "My Operator"
     bl_options = {'REGISTER', 'UNDO'}
+````
+
+- `bl_idname`: Identificador único do operador no sistema da API do Blender.
+- `bl_options`:
+    - *'REGISTER'*: Registra a ação no histórico do Blender.
+    - *'UNDO'*: Permite desfazer a ação com `Ctrl + Z` e ativa o painel pop-up de parâmetros.
+
+## Configurações do Material 
+
+| Parâmetro | Valor| Descrição |
+| :--- | :--- | :--- |
+| Tipo de Nó | `ShaderNodeEmission` | Nó responsável por fazer o objeto emitir luz.|
+| Color | `"(0.0, 0.3, 1.0, 1.0)"` | Cor em formato RGBA (Tom azul).|
+| Strength | `500.0` | Intensidade do brilho emitido pelo material.|
+
+## RequisitosBlender: 
+- Versão 2.80 ou superior.
+## Engine de Render recomendada: 
+- EEVEE ou Cycles para visualizar o efeito de emissão de luz.

@@ -43,7 +43,7 @@ class MyOperator(bpy.types.Operator):
         new_tex = bpy.data.textures.new("My Texture", 'DISTORTED_NOISE')
 
         #change the texture settings
-        new_tex.noise_scale = selt.noise_scale
+        new_tex.noise_scale = self.noise_scale
 
         #assign the texture to displacement modifier:
         mod_displace.texture = new_tex
